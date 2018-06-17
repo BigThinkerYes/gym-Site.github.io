@@ -186,10 +186,10 @@ body{
     left:0;
 }
 .ui_text_slide h4{
-  position:absolute; top:20%; left:-100%; z-index:3; color:#fff; text-align:center; width:100%; 
+  position:absolute; top:5%; left:-100%; z-index:3; color:#fff; text-align:center; width:100%; 
 }
 .ui_text_slide p{
-  position:absolute; top:35%; left:100%; z-index:3; text-align:center; width:100%;
+  position:absolute; top:20%; left:100%; z-index:3; text-align:center; width:100%;
 }
 .ui_text_slide h4,.ui_text_slide p, .ui_text_slide_hover{
   transition:all 500ms; -moz-transition:all 500ms; -ms-transition:all 500ms; -webkit-transition:all 500ms;background:rgba(0,0,0,0.9);
@@ -205,5 +205,8 @@ body{
   #newsletter .make-response{
     margin-bottom: 10px;
     border:none;
+  }
+  #trainers{
+    background-color:#333;
   }
 }

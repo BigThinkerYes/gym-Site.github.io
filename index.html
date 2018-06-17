@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One" rel="stylesheet">
+
+  <script src="js/script.js"></script>
+  <!---->
+  <link rel="stylesheet" href="css/style.css">
+  <title>gym site</title>
+</head>
+<body id="home" data-spy="scroll" data-target="#main-nav">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top py-0" id="main-nav">
+        <div class="container">
+              <a href="#home" class="navbar-brand">
+                  <img src="img/logo.png" width="" height="" alt="logo">
+                  <h3 class="d-inline align-middle"></h3>
+              </a>
+
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav ml-auto">
+                      <!--<li class="nav-item active"> second way to select active -->
+                      <li class="nav-item">
+                          <a href="#home" class="nav-link scroll">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#about" class="nav-link scroll">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#classes" class="nav-link scroll">Classes</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#trainers" class="nav-link scroll">Trainers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#contact" class="nav-link scroll">Contact</a>
+                      </li>
+
+                  </ul>
+              </div>
+        </div>
+  </nav>
+  <!-- / showcase 1st section / -->
+  <section id="showcase" class="py-5">
+      <div class="primary-overlay text-white">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <h1 class="display-2 mt-5 pt-5">
+                              Investing in Yourself
+                            </h1>
+                            <p class="lead">Start your journey today. It won't be easy but if you have the dedication then it is posible.</p>
+                            <a href="#" class="btn btn-outline-secondary btn-lg text-white" data-toggle="modal" data-target="#priceModal">
+                                  <i class="fas fa-arrow-right"></i>&nbsp; Read More
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--/slider/-->
+                              <div id="myCarousel" class="carousel slide img-fluid d-none d-lg-block showCaseImg" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item carousel-image-1 active">
+                                              <div class="container">
+                                                    <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                                                          <h1 class="display-3">Always</h1>
+                                                          <p class="lead">Determined</p>
+                                                          <!--// <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>-/-->
+                                                    </div>
+                                              </div><!--/ container end /-->
+                                        </div><!--1st slide-->
+                                        <div class="carousel-item carousel-image-2">
+                                            <div class="container">
+                                                  <div class="carousel-caption d-none d-sm-block mb-5">
+                                                        <h1 class="display-3">Focused</h1>
+                                                        <p class="lead">on Today not Tomorrow</p>
+                                                        <!--// <a href="#" class="btn btn-primary btn-lg">Learn More</a>-/-->
+                                                  </div>
+                                            </div><!--/ container end /-->
+                                      </div><!--2nd slide-->
+                                      <div class="carousel-item carousel-image-3">
+                                          <div class="container">
+                                                <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                                                      <h1 class="display-3">Are You</h1>
+                                                      <p class="lead">Ready?</p>
+                                                      <!--// <a href="#" class="btn btn-success btn-lg">Sign Up Now</a>-/-->
+                                                </div>
+                                          </div><!--/ container end /-->
+                                    </div><!--slide 3-->
+                                    </div><!--/ carousel end /-->
+                              </div>
+                            
+                            
+                            
+                            <!--<img src="img/woman-boxing.jpg" alt="woman boxer" class="img-fluid d-none d-lg-block showCaseImg">-->
+                        </div>
+                  </div>
+            </div>
+            <!--/ carousel nav /-->
+            <!--<a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>-->
+      </div>
+  </section>
+  <!--/ price modal /-->
+  <div class="modal fade text-dark" id="priceModal">
+      <div class="modal-dialog">
+            <div class="modal-content">
+          <div class="modal-header">
+                <h5 class="modal-title">Pricing</h5>
+                <button class="close" data-dismiss="modal">
+                    <span>&times</span>
+                </button>
+          </div>
+          </div>
+
+      </div><!--end modal-dialog-->
+      <div class="modal-body">
+          <!---->
+          <section id="services" class="py-5">
+                <div class="container">
+                    <div class="row">
+                          <div class="col-md-4">
+                                <div class="card text-center">
+                                      <div class="card-header bg-dark text-white">
+                                            <h3>Service Plan One</h3>
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">$40.00/Month</h4>
+                                          <p class="card-text">Plan Includes:</p>
+                                          <ul class="list-group">
+                                             <li class="list-group-item">
+                                                <i class="fas fa-check"></i>Gym Membership
+                                             </li><!---->
+                                             <li class="list-group-item">
+                                                <i class="fas fa-check"></i>Personal Training
+                                             </li><!---->
+                                             <li class="list-group-item">
+                                                <i class="fas fa-check"></i>Meal Planning
+                                             </li><!---->
+                                          </ul>
+                                          <a href="#" class="btn btn-danger btn-block mt-2">Get Started</a>
+                                      </div>
+                                      <div class="card-footer text-muted">
+                                          1 Year Plan
+                                      </div>
+                                </div><!--/end card/-->
+                          </div><!---->
+                          <div class="col-md-4">
+                              <div class="card text-center">
+                                  <div class="card-header bg-dark text-white">
+                                        <h3>Service Plan Two</h3>
+                                  </div>
+                                  <div class="card-body">
+                                      <h4 class="card-title">$45.00/Month</h4>
+                                      <p class="card-text">Plan Includes:</p>
+                                      <ul class="list-group">
+                                         <li class="list-group-item">
+                                            <i class="fas fa-check"></i>Gym Membership
+                                         </li><!---->
+                                         <li class="list-group-item">
+                                            <i class="fas fa-check"></i>Diet Plan
+                                         </li><!---->
+                                         <li class="list-group-item">
+                                            <i class="fas fa-check"></i>Personal Training
+                                         </li><!---->
+                                      </ul>
+                                      <a href="#" class="btn btn-danger btn-block mt-2">Get Started</a>
+                                  </div>
+                                  <div class="card-footer text-muted">
+                                      1 Year Plan
+                                  </div>
+                            </div><!--/end card/-->
+                          </div>
+                          <div class="col-md-4">
+                              <div class="card text-center">
+                                  <div class="card-header bg-dark text-white">
+                                        <h3>Service Plan Three</h3>
+                                  </div>
+                                  <div class="card-body">
+                                      <h4 class="card-title">$50.00/Month</h4>
+                                      <p class="card-text">Plan Includes:</p>
+                                      <ul class="list-group">
+                                         <li class="list-group-item">
+                                            <i class="fas fa-check"></i>Gym Membership
+                                         </li><!---->
+                                         <li class="list-group-item">
+                                            <i class="fas fa-check"></i>Personal training
+                                         </li><!---->
+                                         <li class="list-group-item">
+                                            <i class="fas fa-check"></i>5 classes
+                                         </li><!---->
+                                      </ul>
+                                      <a href="#" class="btn btn-danger btn-block mt-2">Get Started</a>
+                                  </div>
+                                  <div class="card-footer text-muted">
+                                      1 Year Plan
+                                  </div>
+                            </div><!--/end card/-->
+                          </div>
+
+                    </div>
+                </div>
+          </section>
+      </div>
+
+  </div><!--end main modal div-->
+
+  <!--/ end modal /-->
+
+  <!-- / boxes / -->
+  <section id="about" class="boxes px-5">
+        <div class="container">
+              <div class="row">
+                  
+                          <div class="col-md-4">
+                                <div class="card text-center border-primary make-response ">
+                                      <div class="card-body">
+                                            <h3 class="text-primary">Always Room For Growth</h3>
+                                            <p class="text-muted">Make your health better by going to the gym for a healthier, more energized you!</p>
+                                      </div>
+                                </div>
+                          </div><!---->
+                         
+
+                    
+              </div>
+        </div>
+  </section>
+
+   
+  <!-- / about/ why section / -->
+  <section id="" class="py-5 text-center bg-light">
+        <div class="container">
+              <div class="row">
+                    <div class="row">
+                          <div class="col">
+                                <div class="info-header mb-5">
+                                      <h1 class="text-primary pb-3">
+                                        Why Visit Us
+                                      </h1>
+                                      <p class="lead pb-3">
+                                            Our classes are flexible, we get you the training you need without the hassle. We're here with a supportive community and very nice gyms. All you have to do is visit us at one of our locations.
+                                      </p>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                </div>
+          </section>
+
+         
+
+                                <section id="classes" class="bg-dark text-white px-5">
+                                      <div class="primary-overlay text-white">
+                                          <div class="container">
+                                              <div class="row">
+                                                  <div class="col">
+                                                        <div class="info-header mb-5">
+                                                              <h1 class="text-primary text-primary-2  pb-3">
+                                                                    Class Overview
+                                                              </h1>
+                                    
+                                                        </div>
+                                
+                                                  </div>
+                                            </div><!--end row 1-->
+                                                <div class="row"><!--row 2-->
+                                                          <div class="col-sm-4 ui_text_slide">
+                                                              <img src="img/team-workout.jpg" alt="team-workout" class="img-fluid w-200 mb-3 fade_image">
+                                                              <h4>Motivation</h4>
+                                                              <p>Join our team, work with others and have fun and making new friends. Meet with a class that helps encourage and motivate you to build strength and endurance to help get results faster. Training classes are from 8am to 10pm</p>
+                                                          </div><!--col-sm-4-->
+                                                            
+                                                          <div class="col-sm-4 ui_text_slide">
+                                                              <img src="img/abdominal-exercise.jpg" alt="team-workout" class="img-fluid w-200 mb-3 fade_image">
+                                                              <h4>Abdominal Workout</h4>
+                                                              <p>Gets the flat stomach you want in just weeks. We help you know  which foods to eat and more. If you just want to stretch and relax your body we have the class for you. Our certified personal Instructor will get you on the path to relaxation.</p>
+                                                          </div><!--col-sm-4-->
+                                                          
+                                                          <div class="col-sm-4 ui_text_slide">
+                                                              <img src="img/barbell-lift.jpg" alt="team-workout" class="img-fluid w-200 mb-3 fade_image">
+                                                              <h4>Strength Training</h4>
+                                                              <p>No need to worry about the size or amount of weight we build from the start and work our way up to your desired weight.</p>
+                                                          </div><!--col-sm-4-->
+                                                    </div>
+                                                    <br><br>
+                                                    <div class="row"><!--row 3-->
+                                                            <div class="col-sm-4 ui_text_slide">
+                                                                <img src="img/challenge-crossfit.jpg" alt="team-workout" class="img-fluid w-200 mb-3 fade_image">
+                                                                <h4>Fitness Consultation</h4>
+                                                                <p>Be A Better You with our starter program that helps you get on track to meet some fitness goals you may want.</p>
+                                                            </div><!--col-sm-4-->
+                                                              
+                                                            <div class="col-sm-4 ui_text_slide">
+                                                                <img src="img/friends.jpg" alt="team-workout" class="img-fluid w-200 mb-3 fade_image">
+                                                                <h4>Certified Personal Training</h4>
+                                                                <p>We even offer special classes if you do not like large classes, a certified personal trainer is avaliable at your convenience.</p>
+                                                            </div><!--col-sm-4-->
+                                                            
+                                                            <div class="col-sm-4 ui_text_slide">
+                                                                <img src="img/one-on-one.jpg" alt="team-workout" class="img-fluid w-200 mb-3 fade_image">
+                                                                <h4>Hard Work Paying off</h4>
+                                                                <p>Get the help you want today, if your a satisfied customer we would like to know so don't be afraid to leave a review. Remember we are here to help and make it fun.</p>
+                                                            </div><!--col-sm-4-->
+                                                </div><!--end row 3-->
+                                                </div>
+                                </section><!--classes-->
+
+
+                   
+
+  <!-- / authors / -->
+  <section id="trainers" class="my-5 text-center">
+        <div class="container">
+            <div class="row">
+                  <div class="col">
+                        <div class="info-header mb-5">
+                              <h1 class="text-primary pb-3 train">
+                                  Certified Personal Trainers
+                              </h1>
+                              <!--<p class="lead">
+                                    text
+                              </p>-->
+                        </div>
+
+                  </div>
+            </div><!--end row-->
+            <div class="row">
+
+              <!--video-->
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/videos/Wavez.mp4" type="video/mp4">
+                        <source src="img/videos/Wavez.webm" type="video/webm">
+                        <source src="img/videos/Wavez.ogv" type="video/ogv">
+                    </video>
+                </div>
+              <!--end video-->
+                  <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                              <div class="card-body">
+                                    <img src="img/aerobics-trainer.jpg" alt="team-workout" class="img-fluid w-250 mb-3">
+                                    <h3>Ashley Dans</h3>
+                                    <h5 class="text-muted">Professional Trainer</h5>
+                                    <p>Make exercise fun again.</p>
+                                    <!--/ using flex box /-->
+                                        <div class="d-flex justify-content-center">
+                                            <div class="p-4">
+                                                <a href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </div><!---->
+                                            <div class="p-4">
+                                                  <a href="#">
+                                                     <i class="fab fa-twitter"></i> 
+                                                  </a>
+                                            </div><!---->
+                                            <div class="p-4">
+                                                  <a href="#">
+                                                      <i class="fab fa-instagram"></i>
+                                                  </a>
+                                            </div>
+                                        </div><!-- end d-flex -->
+                                    <!---->
+
+
+
+                                    
+                              </div>
+                        </div>
+                  </div><!--end col-->
+
+                  <div class="col-lg-3 col-md-6">
+                      <div class="card">
+                            <div class="card-body">
+                                  <img src="img/challenge-crossfit.jpg" alt="team-workout" class="img-fluid  w-250 mb-3">
+                                  <h3>David Jans</h3>
+                                  <h5 class="text-muted">Professional Trainer</h5>
+                                  <p>Make exercise fun again.</p>
+                                  <!--/ using flex box /-->
+                                      <div class="d-flex justify-content-center">
+                                          <div class="p-4">
+                                              <a href="#">
+                                                  <i class="fab fa-facebook"></i>
+                                              </a>
+                                          </div><!---->
+                                          <div class="p-4">
+                                                <a href="#">
+                                                   <i class="fab fa-twitter"></i> 
+                                                </a>
+                                          </div><!---->
+                                          <div class="p-4">
+                                                <a href="#">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                          </div>
+                                      </div><!-- end d-flex -->
+                                  <!---->
+
+
+
+                                  
+                            </div>
+                      </div>
+                </div><!--end col 2-->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                          <div class="card-body">
+                                <img src="img/aerobics-trainer3.jpg" alt="team-workout" class="img-fluid w-250 mb-3">
+                                <h3>Hray kamber</h3>
+                                <h5 class="text-muted">Professional Trainer</h5>
+                                <p>Make exercise fun again.</p>
+                                <!--/ using flex box /-->
+                                    <div class="d-flex justify-content-center">
+                                        <div class="p-4">
+                                            <a href="#">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </div><!---->
+                                        <div class="p-4">
+                                              <a href="#">
+                                                 <i class="fab fa-twitter"></i> 
+                                              </a>
+                                        </div><!---->
+                                        <div class="p-4">
+                                              <a href="#">
+                                                  <i class="fab fa-instagram"></i>
+                                              </a>
+                                        </div>
+                                    </div><!-- end d-flex -->
+                                <!---->
+
+
+
+                                
+                          </div>
+                    </div>
+              </div><!--end col 3-->
+
+              <div class="col-lg-3 col-md-6">
+                  <div class="card">
+                        <div class="card-body">
+                              <img src="img/aerobics-trainer2.jpg" alt="team-workout" class="img-fluid w-250 mb-3">
+                              <h3> John Gains</h3>
+                              <h5 class="text-muted">Professional Trainer</h5>
+                              <p>Make exercise fun again.</p>
+                              <!--/ using flex box /-->
+                                  <div class="d-flex justify-content-center">
+                                      <div class="p-4">
+                                          <a href="#">
+                                              <i class="fab fa-facebook"></i>
+                                          </a>
+                                      </div><!---->
+                                      <div class="p-4">
+                                            <a href="#">
+                                               <i class="fab fa-twitter"></i> 
+                                            </a>
+                                      </div><!---->
+                                      <div class="p-4">
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                      </div>
+                                  </div><!-- end d-flex -->
+                              <!---->
+
+
+
+                              
+                        </div>
+                  </div>
+            </div><!--end col 4-->
+
+            </div><!--end row-->
+        </div>
+  </section>
+
+
+  <!-- / contact / -->
+  <section id="contact" class="bf-light py-5">
+        <div class="container">
+              <div class="row">
+                    <div class="col-lg-5">
+                          <h3 class="contact-h3">Get In Touch</h3>
+                          <p class="lead"></p>
+                          <form>
+                              <div class="input-group input-group-lg mb-3">
+                                    <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                                <i class="fas fa-user"></i>
+                                          </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Name">
+                              </div><!--input1-->
+
+                              <div class="input-group input-group-lg mb-3">
+                                  <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                              <i class="far fa-envelope-open"></i>
+                                        </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Email">
+                            </div><!--input2-->
+
+                            <div class="input-group input-group-lg mb-3">
+                                <div class="input-group-prepend">
+                                      <span class="input-group-text">
+                                            <i class="fas fa-pencil-alt"></i>
+                                      </span>
+                                </div>
+                                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                          </div><!--input3-->
+                                <input type="submit" value="Submit" class="btn btn-primary mb-3">
+                          </form>
+                        </div>
+                        <div class="col-lg-7 align-self-center">
+                             <img src="img/adult-athlete.jpg" alt="woman" class="img-fluid circle">
+                        </div>
+              </div>
+        </div>
+  </section>
+  <!--footer-->
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <p class="lead">
+                     LDReed sites Copyright &copy;<span id="year"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+  </footer>
+
+ 
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <!---->
+  <script>
+  //get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+  //init scrollspy
+ $('body').scrollspy({target: '#main-nav'});
+
+  //smoth scrolling
+  //$("#main-nav a").on('click', function (event){
+  // $("#main-nav a").on('click', function (event){
+  //if (this.hash !== ""){
+  //  event.preventDefault();
+  //  const hash = this.hash;
+
+  //  $('html, body').animate({
+ //     scrollTop: $(hash).offset().top
+ //   }, 800, function()
+//    { 
+//      window.location.hash = hash;
+//    });
+//  }
+  </script>
+</body>
+</html>

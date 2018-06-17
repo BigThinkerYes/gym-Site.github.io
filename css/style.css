@@ -1,0 +1,209 @@
+body{
+  margin-top:105px;
+}
+
+.navbar{
+  box-shadow:2px 2px 5px #0da986;
+  opacity:0.9;
+  background:#fff;
+  
+}
+.navbar .nav-item{
+  font-size:1.4rem;
+  padding-right:1.4rem;
+}
+.active{
+  font-weight: bold;
+}
+#showcase{
+  position:relative;
+  background: url('../img/black-and-white-boxing.jpg');
+  min-height: 700px;
+  background-size: cover;
+  top:-130px;
+}
+#showcase .primary-overlay{
+  background: rgba(13,169,134,0.9);
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+#showcase .primary-overlay > div{
+  margin-top:90px;
+}
+#showcase .primary-overlay > div img{
+  margin-top:90px;
+}
+.showCaseImg{border-radius:5px;}
+/*------------------/slider/----------------*/
+.carousel-item{
+    margin-top:60px;
+    height:400px;
+}
+.carousel-image-1{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(44, 43, 44, 0.7)), url('../img/woman-boxing.jpg');
+  background-size:cover;
+}
+.carousel-image-2{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(44, 43, 44, 0.7)), url('../img/aerobics-class.jpg');
+  background-size:cover;
+}
+.carousel-image-3{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(44, 43, 44, 0.7)), url('../img/woman-boxer.jpg');
+  background-size:cover;
+}
+.carousel-item{
+  border-radius:10px;
+}
+.display-3{
+  font-family: 'Patua One', cursive;
+}
+.lead{
+  font-family: 'Comfortaa', cursive;
+}
+/*----------------/slider end/--------------*/
+#newsletter{
+  
+}
+
+#classes{
+  position:relative;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(204, 0, 204, 0.7)), url('../img/aerobics-class.jpg');
+  min-height: auto;
+  background-size: cover;
+  top:-50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#classes img{
+  border-radius:5px;
+}
+.info-header{
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+#about {
+  position:relative;
+  background: url('../img/aerobics-stretch.jpg');
+  min-height: 300px;
+  background-size: cover;
+  padding-top:50px;
+  margin-top: -130px;
+}
+
+/*trainer section*/
+#trainers{
+  position: relative;
+  min-height: 900px;
+  margin-top:-80px;
+}
+#trainers .train{
+  margin-top:70px;
+  color:#fff !important;
+}
+#trainers img{
+    margin-top: -50px;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border:5px solid  #ff5050;
+}
+#trainers .card{
+  background: #ff5050;
+}
+#trainers .card:hover{
+  /*background:#ff3300;*/
+  color:#fff;
+}
+#trainers .fab{
+  color:#fff;
+}
+.text-muted{
+  color:#212529 !important;
+}
+.text-primary-2{
+  color: #ccccb3 !important;
+}
+/*video*/
+.bg-video{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  margin-top: -100px;
+  z-index: -100;
+  overflow:hidden;
+}
+.bg-video .bg-video__content{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.train{
+  z-index: 100;
+}
+#contact{
+  margin-top:-130px;
+}
+.contact-h3{
+  background-color:#fff;
+  display:block;
+  padding:7px;
+}
+
+#main-footer{
+  background-color:#0f0f0a !important;
+}
+/*animation*/
+.ui_text_slide{
+    position:relative;
+    overflow:hidden;
+    width:auto;
+    height:auto;
+    
+}
+.ui_text_slide:hover .ui_text_slide_hover{
+  position: absolute;
+  top:-250;
+  left:0;
+  transition: all 500ms;
+  -moz-transition:all 1500ms;
+  -ms-transition:all 1500ms;
+  -webkit-transition:all 1500ms;
+  width:350px; height:250px;
+}
+.ui_text_slide .ui_text_slide_hover:hover{
+    top:0;
+}
+.ui_text_slide:hover h4{
+    left:0;
+}
+.ui_text_slide:hover p{
+    left:0;
+}
+.ui_text_slide h4{
+  position:absolute; top:20%; left:-100%; z-index:3; color:#fff; text-align:center; width:100%; 
+}
+.ui_text_slide p{
+  position:absolute; top:35%; left:100%; z-index:3; text-align:center; width:100%;
+}
+.ui_text_slide h4,.ui_text_slide p, .ui_text_slide_hover{
+  transition:all 500ms; -moz-transition:all 500ms; -ms-transition:all 500ms; -webkit-transition:all 500ms;background:rgba(0,0,0,0.9);
+}
+/*media queries*/
+@media (max-width:768px){
+  #showcase{
+    min-height:500px;
+  }
+  #showcase h1{
+    font-size:40px;
+  }
+  #newsletter .make-response{
+    margin-bottom: 10px;
+    border:none;
+  }
+}

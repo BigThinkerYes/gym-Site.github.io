@@ -196,6 +196,9 @@ body{
 }
 /*media queries*/
 @media (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
   #showcase{
     min-height:500px;
   }
@@ -209,4 +212,9 @@ body{
   #trainers{
     background-color:#333;
   }
+  .bg-video{
+    display:none;
+  }
 }
+
+

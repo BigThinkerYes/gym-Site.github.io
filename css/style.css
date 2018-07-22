@@ -14,13 +14,13 @@ body{overflow-x: hidden !important;}
 #home{
   position:relative;
   background:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)),url('../img/heavyLifting.jpg');
-  min-height:650px;
+  min-height:940px;
   background-repeat:no-repeat;
   background-size:cover;
   /*animation*/
   backface-visibility:hidden;
 }
-#home > div{margin-top:100px;}
+#home > div{margin-top:300px;}
 .head-text{
   letter-spacing:15px;
   font-family: 'Permanent Marker', cursive;
@@ -48,7 +48,7 @@ body{overflow-x: hidden !important;}
   animation: moveInRight 1s ease-out;
 }
 /*-------------buttons---------------*/
-.btn-red{margin-top:100px; border:none !important; background:#8E1B1B;color:#E0E0E0 !important;}
+.btn-red{margin-top:50px; border:none !important; background:#8E1B1B;color:#E0E0E0 !important;}
 /*--btn animation--*/
 .btn-red:hover{
   transform:translateY(-3px);
@@ -149,6 +149,9 @@ body{overflow-x: hidden !important;}
   animation: moveInRight 1s ease-out;
 }
 /*classes*/
+.class-text{
+  
+}
 #classes{
   background:-webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(44, 43, 44, 0)), url('../img/brick-wall.jpeg');
   background-repeat: no-repeat;
@@ -167,21 +170,57 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
   width:320px;
   height:320px; 
 }
+
 .white-box p{
   color:#fff;
+  -webkit-box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
+  -ms-box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
+  -o-box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
   /*background-color: rgba(255, 153, 153, .6);C*/
+  -webkit-background-color: rgb(29, 29, 29, 0.9);
+  -moz-background-color: rgb(29, 29, 29, 0.9);
+  -ms-background-color: rgb(29, 29, 29, 0.9);
+  -o-background-color: rgb(29, 29, 29, 0.9);
   background-color: rgb(29, 29, 29, 0.9);
   border-radius:3px;
   padding:30px;
+  letter-spacing:3px;
+}
+.custom-box-slant{
+  width:350px;
+  color:#fff;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .1);
+  background-color: rgba(248, 7, 7, 0.9);
+  border-radius:13px;
+  padding:10px;
+  padding:25px;
+  padding-bottom:3px;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);
+}
+.custom-box-slant h5{
+  font-weight: 500;
+  transform: skewX(-12deg);
+  color:#fff;
+}
+.custom-box-slant p{
+  font-weight: 500;
+  transform: skewX(12deg);
+  color:#B2B1B1;
+  letter-spacing:5px;
 }
 /*trainers*/
+#trainers{
 
+}
 .card{
   border:none;
 }
 /*contact*/
-#contact{background:-webkit-linear-gradient(rgba(2, 2, 2, 0.87), rgba(34, 33, 34, 0.856));}
+#contact{}
 .mb-resp{
   margin-bottom:1rem;
   padding:1px !important;
@@ -189,10 +228,12 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 .btn-Size{
   padding:3px !important;
 }
-
+ 
+/*contact*/
 /*footer*/
 #main-footer{
-  background:-webkit-linear-gradient(rgba(2, 2, 2, 0.87), rgba(34, 33, 34, 0.856));
+  background:#000;
+  color:#fff;
 }
 .footer_navigation{
   padding:6px;
@@ -204,11 +245,12 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
  
 }
 .footer_navigation a{
-  color:#000;
+  color:#fff;
 }
 /*media*/
 @media(max-width:768px){
   #home{min-height:500px;}
+  #home > div{margin-top:100px;}
   #home h1{font-size:4rem;}
   .mb-resp{
     margin-bottom:1rem;

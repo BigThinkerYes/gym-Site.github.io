@@ -1,6 +1,7 @@
 /*.navbar-brand img:hover{
   animation:moveInRight 1s ease-out;
 }*/
+body{overflow-x: hidden !important;}
 .navbar{
   opacity:0.9;
   background:#000;
@@ -13,13 +14,13 @@
 #home{
   position:relative;
   background:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)),url('../img/heavyLifting.jpg');
-  min-height:720px;
+  min-height:650px;
   background-repeat:no-repeat;
   background-size:cover;
   /*animation*/
   backface-visibility:hidden;
 }
-#home > div{margin-top:200px;}
+#home > div{margin-top:100px;}
 .head-text{
   letter-spacing:15px;
   font-family: 'Permanent Marker', cursive;
@@ -42,6 +43,7 @@
 .sub-text{
   font-size: 2rem;
   font-family: 'Poiret One', cursive;
+  margin-top:30px;
   /*connect animation*/
   animation: moveInRight 1s ease-out;
 }
@@ -156,12 +158,27 @@
   position:relative;
   background-size: cover;
   text-align: center;
-  overflow: hidden;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 }
 .border-Classes{
   border-radius:50%;
-  width:375px;
-  height:375px; 
+  width:320px;
+  height:320px; 
+}
+.white-box p{
+  color:#fff;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 1);
+  /*background-color: rgba(255, 153, 153, .6);C*/
+  background-color: rgb(29, 29, 29, 0.9);
+  border-radius:3px;
+  padding:30px;
+}
+/*trainers*/
+
+.card{
+  border:none;
 }
 /*contact*/
 #contact{background:-webkit-linear-gradient(rgba(2, 2, 2, 0.87), rgba(34, 33, 34, 0.856));}
@@ -201,4 +218,10 @@
     border-radius:50%;
     width:275px;
     height:275px;
+}
+#classes{
+  
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }

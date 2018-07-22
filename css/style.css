@@ -1,70 +1,146 @@
-
-.nav-menu{
-  background-color:#333;
-  padding:0 20px;
+/*.navbar-brand img:hover{
+  animation:moveInRight 1s ease-out;
+}*/
+.navbar{
+  opacity:0.9;
+  background:#000;
 }
-.nav-menu ul{
-  margin:0;
-  padding:0;
+.nav-item{
+  font-size: 1rem;
+  padding-right: 1rem;
 }
-.nav-menu ul li{
-  list-style:none;
-  float:right;
-}
-
-.nav-menu ul li a:link,
-.nav-menu ul li a:visited{
-  display:block;
-  font-size:90%;
-  padding:10px 25px 10px 0;
-  color:#305782;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-/*hide the word menu*/
-.menu-trigger{
-  display:none;
-}
-
-/*next section*/
-#menu_item-1{
+/**/
+#home{
   position:relative;
-  background:url("../img/heavyLifting.jpg");
-  min-height:auto;
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)),url('../img/heavyLifting.jpg');
+  min-height:700px;
+  background-repeat:no-repeat;
   background-size:cover;
+  /*animation*/
+  backface-visibility:hidden;
 }
-/**/
-/*stack nav li*/
-@media screen and (max-width:500px){
-  .menu-trigger{
-    display:block;
-    color:#305782;
-    background:#333;
-    padding:10px;
-    text-align:right;
-    font-size:83%;
-    cursor:pointer;
-  }
-  /*hide main menu from small screens*/
-  .nav-menu{
-    display:none;
-  }
-  /*use with javascript custom nav class*/
-  .nav-expanded{display:block;}
-  /**/
-  .nav-menu ul li{
-    float:none;
-    border-bottom:2px solid #d5dce4;
-  }
-  /*remove border from last li item*/
-  .nav-menu ul li:last-child{
-    border-bottom:none;
-  }
+.head-text{
+  letter-spacing:15px;
+  font-family: 'Permanent Marker', cursive;
+  /*connect animation*/
+  animation-name:moveInLeft;
+  animation-duration:2s;
+  animation-timing-function: ease-out;
+  /*
+  animation-delay:3s;
+  animation-iteration-count:3; repeat 3 times
+  animation-timing-function
+  animation-timing-function: ease;
+  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+  animation-timing-function: step-start;
+  animation-timing-function: step-end;
+  */
+}
+.sub-text{
+  font-size: 2rem;
+  font-family: 'Poiret One', cursive;
+  /*connect animation*/
+  animation: moveInRight 1s ease-out;
+}
+/*-------------buttons---------------*/
+.btn-red{margin-top:100px; border:none !important; background:#8E1B1B;color:#E0E0E0 !important;}
+/*--btn animation--*/
+.btn-red:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,.2);
+}
+.btn-red:active{
+  transform:translateY(-1px);
+  box-shadow:0 5px 10px rgba(0,0,.2);
+}
+.btn-red:visited{
+  transition:all .2s;
+}
+/*position btn behind btn*/
+.btn-red::after{
+  content:"";
+  height:100%;
+  width:100%;
+}
+.btn-animated{
+  animation: moveInBottom .5s ease-out;
+  animation-delay:.75s;
+  /*apply styles before animaton*/
+  animation-fill-mode:backwards;
+}
+.btn{
+  position:relative;
+  overflow: hidden;
+  transition:1s all ease;
 
 }
-/*clear floats*/
-/**/
-.clearfix:before, .clearfix:after{content:""; display:table;}
-.clearfix:after{clear:both;}
-.clearfix{*zoom: 1;}
+
+
+/*.arrow{margin-top:200px; font-weight: 500;}*/
+/*--------animation----------*/
+/**.arrow{
+  position:relative;
+  font-size:48px;
+  text-align:center;
+  transform:rotate(90deg);
+  animation:bouncearrow 1s infinite;
+}
+@keyframes bouncearrow{
+  0%{top:0px;}
+  50%{top: 20px;}
+  100%{top:0px;}
+}**/
+
+/*head-text*/
+@keyframes moveInLeft{
+0%{
+  opacity:0;
+  transform:translateX(-100px);
+}
+80%{
+  transform: translateX(20px);
+}
+100%{
+  opacity:1;
+  transform:translate(0);
+}
+}
+/*sub-text*/
+@keyframes moveInRight{
+  0%{
+    opacity:0;
+    transform:translateX(100px);
+  }
+  80%{
+    transform: translateX(-20px);
+  }
+  100%{
+    opacity:1;
+    transform:translate(0);
+  }
+  }
+  /*button*/
+@keyframes moveInBottom{
+  0%{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  100%{
+    opacity:1;
+    transform:translate(0);
+  }
+  }
+/*------end animation--------*/
+/*about section*/
+#about{
+  background:-webkit-linear-gradient(rgba(2, 2, 2, 0.87), rgba(34, 33, 34, 0.856));
+}
+.about-image{
+  width:100%;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .1);  
+  transform: skewX(-12deg);
+  animation: moveInRight 1s ease-out;
+}

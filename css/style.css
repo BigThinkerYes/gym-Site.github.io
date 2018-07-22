@@ -144,3 +144,10 @@
   transform: skewX(-12deg);
   animation: moveInRight 1s ease-out;
 }
+
+
+/*media*/
+@media(max-width:768px){
+  #home{min-height:500px;}
+  #home h1{font-size:4rem;}
+}

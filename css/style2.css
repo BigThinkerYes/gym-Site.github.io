@@ -16,7 +16,6 @@ body{
   font-weight:400;
   letter-spacing:15px;
   font-family: 'Permanent Marker', cursive;
-
 }
 .head-text{
   color:#66d1fd;
@@ -29,6 +28,7 @@ body{
   color:#fff;
   background:#8C0606;
   padding:10px;
+  border-radius:8px;
 }
 /*text*/
 .blue-text{
@@ -178,8 +178,20 @@ body{
 .info-header{
   margin-top:300px;
   text-align: center;
-  margin-bottom:0;
+  margin-bottom:0 !important;
   padding-bottom:0;
+  color:#fff !important;
+  display:inline-block;
+}
+.info-header{
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .1);
+  background-color: rgba(248, 7, 7, 0.9);
+  border-radius:3px;
+  padding:10px;
+  padding-left:50px;
+  padding-bottom:3px;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);
 }
 .card{
   margin-top:210px;
@@ -197,4 +209,164 @@ body{
 }
 .lead{
   color:#fff;
+}
+.form-control-lg{
+  padding:1px !important;
+  text-align: center;
+}
+/*contact*/
+.info-header-contact{
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .1);
+  background-color: rgba(248, 7, 7, 0.9);
+  border-radius:3px;
+  padding:5px;
+  padding-left:5px;
+  padding-bottom:3px;
+  color:#fff !important;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);
+}
+/*footer*/
+.footer_navigation{
+  background:#000;
+  padding:6px;
+  border-radius:8px;
+}
+.footer_navigation ul{
+  list-style:none;
+}
+.footer_navigation a{
+  color:#fff;
+}
+/*media-------------------------------------------------*/
+/*media*/
+@media (max-width:989px){
+  .white-box{
+    width:600px;
+    margin-top:140px;
+    margin-left:-190px;
+  }
+  #about .primary-overlay{
+    background:rgba(19,17,17,0.9);
+    position:absolute;
+    top:1000px;
+    left:0;
+    width:100%;
+    height:auto;
+    min-height:800px;
+    z-index:3;
+  }
+  .img-border{
+    background:-webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(44, 43, 44, 0)), url('../img/one-on-one-Train.jpg');
+    background-repeat: no-repeat;
+    border-radius:15px;
+    height:200px;
+    margin-top:-90px !important;
+    width:500px;
+    background-size:cover;
+  }
+  /**/
+  /*.imgSize{
+   margin-right:160px !important;
+ }*/
+ .border-Classes{
+  border-radius:50%;
+  width:275px;
+  height:275px;
+ /* margin-right:370px !important;*/
+  
+}
+ /**/
+  .card-bottom{
+    margin-top:-30px;
+    margin-bottom:50px;
+  }
+
+  #trainers{
+    position:relative;
+    min-height:800px;
+    margin-top:790px;
+    background:#fff;
+    padding:180px;
+    z-index:4;
+    -webkit-clip-path: polygon(0 7%, 100% 15%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 7%, 100% 15%, 100% 100%, 0% 100%);/*x y, x(top right corner) y, x y(right bottom corner), x y*/
+    overflow-y: hidden;
+  }
+  /**/
+  .submit{
+    margin-left:50px;
+  }
+  .footer_navigation{
+    background:#000;
+    padding-right:160px!important;
+    margin-right:15px !important;
+  }
+  .hideMe{
+    display:none !important;
+  }
+  .footer_navigation ul li{
+    list-style:none;
+    text-align: center !important;
+    
+  }
+  .footer_navigation a{
+    color:#fff;
+  
+  }
+
+}
+
+/*media*/
+@media (max-width:887px){
+ /* .imgSize{
+    margin-right:60px !important;/*circle*/
+  /*}
+  .white-box{
+    width:600px;
+    margin-top: 80px !important;
+    margin-left:-190px;
+  }*/
+}
+/*media*/
+@media (man-width:819px){
+
+}
+
+/*media*/
+@media (max-width:768px){
+  #home{
+    min-height:200px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(44, 43, 44, .5)), url('../img/heavyLifting.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+  .head-text{
+    margin-top:50px;
+    color:#f3bd03;
+  }
+  #about{
+    padding-bottom:30px;
+    margin-bottom:130px;
+    z-index:4;
+  }
+
+  #trainers{
+    position:relative;
+    min-height:800px;
+    margin-top:790px;
+    background:#fff;
+    padding:50px;
+    z-index:4;
+    -webkit-clip-path: polygon(0 7%, 100% 5%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 7%, 100% 5%, 100% 100%, 0% 100%);/*x y, x(top right corner) y, x y(right bottom corner), x y*/
+    overflow-y: hidden;
+  }
+  .card{
+  margin-bottom:50px;
+  }
+  .card-body{
+    margin-bottom:50px;
+    }
 }

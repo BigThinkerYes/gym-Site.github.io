@@ -13,12 +13,13 @@
 #home{
   position:relative;
   background:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)),url('../img/heavyLifting.jpg');
-  min-height:700px;
+  min-height:720px;
   background-repeat:no-repeat;
   background-size:cover;
   /*animation*/
   backface-visibility:hidden;
 }
+#home > div{margin-top:200px;}
 .head-text{
   letter-spacing:15px;
   font-family: 'Permanent Marker', cursive;
@@ -140,14 +141,64 @@
 .about-image{
   width:100%;
   margin: 0 auto;
+  border-radius:15px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, .1);  
   transform: skewX(-12deg);
   animation: moveInRight 1s ease-out;
 }
+/*classes*/
+#classes{
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(44, 43, 44, 0)), url('../img/brick-wall.jpeg');
+  background-repeat: no-repeat;
+  background-size:cover;
 
 
+  position:relative;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+.border-Classes{
+  border-radius:50%;
+  width:375px;
+  height:375px; 
+}
+/*contact*/
+#contact{background:-webkit-linear-gradient(rgba(2, 2, 2, 0.87), rgba(34, 33, 34, 0.856));}
+.mb-resp{
+  margin-bottom:1rem;
+  padding:1px !important;
+}
+.btn-Size{
+  padding:3px !important;
+}
+
+/*footer*/
+#main-footer{
+  background:-webkit-linear-gradient(rgba(2, 2, 2, 0.87), rgba(34, 33, 34, 0.856));
+}
+.footer_navigation{
+  padding:6px;
+  border-radius:8px;
+  display:inline-block;
+}
+.footer_navigation ul{
+  list-style:none;
+ 
+}
+.footer_navigation a{
+  color:#000;
+}
 /*media*/
 @media(max-width:768px){
   #home{min-height:500px;}
   #home h1{font-size:4rem;}
+  .mb-resp{
+    margin-bottom:1rem;
+    padding:1px !important;
+  }
+  .border-Classes{
+    border-radius:50%;
+    width:275px;
+    height:275px;
 }

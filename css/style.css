@@ -212,6 +212,8 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
   color:#B2B1B1;
   letter-spacing:5px;
 }
+
+
 /*trainers*/
 #trainers{
 
@@ -266,4 +268,5 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
 }

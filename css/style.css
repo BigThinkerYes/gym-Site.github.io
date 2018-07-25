@@ -215,6 +215,24 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 
 
 /*trainers*/
+.info-header{
+  margin-top:15px;
+  text-align: center;
+  margin-bottom:0 !important;
+  padding-bottom:0;
+  color:#fff !important;
+  display:inline-block;
+}
+.info-header{
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .1);
+  background-color: rgba(248, 7, 7, 0.9);
+  border-radius:3px;
+  padding:10px;
+  padding-left:50px;
+  padding-bottom:3px;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);
+}
 #trainers{
 
 }
@@ -232,6 +250,18 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 }
  
 /*contact*/
+/*contact*/
+.info-header-contact{
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .1);
+  background-color: rgba(248, 7, 7, 0.9);
+  border-radius:3px;
+  padding:5px;
+  padding-left:5px;
+  padding-bottom:3px;
+  color:#fff !important;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);
+}
 /*footer*/
 #main-footer{
   background:#000;

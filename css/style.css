@@ -79,6 +79,10 @@ body{overflow-x: hidden !important;}
   transition:1s all ease;
 
 }
+.btn-Size{
+  background-color:#33d6ff;
+  border:none;
+}
 
 
 /*.arrow{margin-top:200px; font-weight: 500;}*/

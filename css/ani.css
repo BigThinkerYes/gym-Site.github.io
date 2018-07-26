@@ -164,3 +164,24 @@
       
       
       */
+     
+.modal-dialog .modal-content{
+    background-color:transparent !important;
+    border-bottom:none;
+}
+
+.modal-dialog .modal-content .modal-header{
+    background-color:transparent !important;
+}
+.close{
+   
+}
+.x{
+    position: absolute !important; 
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    font-size: 30px !important;
+    color:#fff;
+}

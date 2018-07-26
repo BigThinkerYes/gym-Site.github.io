@@ -306,5 +306,8 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 .custom-box-slant{
   padding-bottom:50px;
 }
+.textSize{
+  width:100%;
+}
 
 }

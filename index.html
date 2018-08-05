@@ -13,17 +13,52 @@
   <title>FIT</title>
 
     <style>/*padding: 7px 14px 10px;*/
-    .nav-item{width:80px; height:30px;}
-	.left{width:80px; height:30px; position:relative; overflow:hidden;}
-	.front{width:100%; height:100%; background-color:#000; color:#fff; font-size:; position:absolute;bottom:5px;}
-	.nav-item a{margin-left:8px; position:absolute; /*make 
-    text allways appear at front*/ z-index:2;}
-    .back2{width:100%; height:100%; background-color:#8E1B1B; position:absolute; left:-100%; -webkit-transition:left 0.25s ease-in-out;transition:left 0.25s ease-in-out; border-radius:10px !important;}
-    .left:hover .back2{left:0%;}
-    .vert{
+    .nav-item{width:80px;
+         height:100px;
+          /*background-color:#8E1B1B; */
+         
+  /*padding:25px;
+  padding-bottom:3px;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);
+  margin-top:-30px;}
+
+
+    .left{width:100px; 
+        height:100px; 
+        position:relative; 
+        right:60px;
+        overflow:hidden; 
+        padding:25px;
+  padding-bottom:3px;
+  /*font-size:1.6rem;*/
+  transform: skewX(-12deg);}
+    .front{width:100%; height:100%; background-color:#8E1B1B; color:#fff; font-size:; position:absolute;bottom:5px;
+  padding:25px;
+  padding-bottom:3px; margin-top:-30px;}
+	.nav-item a{position:absolute; right:25px;/*make 
+    text allways appear at front*/ z-index:2;padding:30px;}
+
+
+
+
+    .back2{width:100%; height:100%; background-color:#333;
+        color:#333 !important;
+        position:absolute; 
+        left:-100%; 
+        top:-0px;
+        padding:10px;
+  padding:25px;
+  padding-bottom:3px;
+        -webkit-transition:left 0.25s ease-in-out;
+        transition:left 0.25s ease-in-out; 
+     }
+    .left:hover .back2{left:0%; }
+    /*.vert{
         padding:1em;
 		background-color:rgba(35, 196, 231, 0.5);
-		color:#fff;
+        color:#fff;
+        color:#333 !important;
 		width:70px;
 		height:5px;
 		position:absolute;
@@ -353,6 +388,7 @@
             <h1 class="text-primary pb-3 info-header-contact">
                     Contact Us
             </h1>
+            <p class="lead"> let the journey begin</p>
       <div class="row">
         <div class="col-md-3">
           <input type="text" class="form-control-lg mb-resp" placeholder="First Name">
@@ -631,6 +667,10 @@
       $('#year').text(new Date().getFullYear());
       //init scrollspy
      $('body').scrollspy({target: '#main-nav'});
+
+
+
+    
   </script>
 
   <script src="js/bootstrap.min.js"></script>

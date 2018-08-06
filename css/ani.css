@@ -126,7 +126,7 @@
           font-size:9px;
           letter-spacing:1px;
           padding-top:4px;
-          font-family:;
+        
       }
       .ch-info p a:hover{color:rgba(255, 242, 34, .8);} 
       .ch-item:hover{
@@ -179,12 +179,35 @@
 .x{
     position: absolute !important; 
     top:0;
-    left:0;
-    right:0;
+    left:50%;
+    right:50%;
     bottom:0;
     font-size: 30px !important;
     color:#fff;
+    border:3px solid #fff;
+    border-radius:50%;
+    display:block;
+    width:50px;
+    height:50px;
 }
 .textSize{
     width:100%;
 }
+.modal{border:none !important;}
+.modal-dialog{border:none !important;}
+.modal-header{border:none !important;}
+.carousel{height:100%; margin: 0 !important;}
+.carousel-inner{height:1000px !important;}
+.carousel-indicators li{margin-top:-200px !important;}
+.carousel-image-1{
+    background:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)),url('../img/heavyLifting.jpg');
+    background-size:cover;
+  }
+  .carousel-image-2{
+    background:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)),url('../img/athlete-biceps-blonde-136410.jpg');
+    background-size:cover;
+  }
+  .carousel-image-3{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)), url('../img/adult-buildings-city-374882.jpg');
+    background-size:cover;
+  }

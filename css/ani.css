@@ -196,7 +196,7 @@
 .modal{border:none !important;}
 .modal-dialog{border:none !important;}
 .modal-header{border:none !important;}
-.carousel{height:100%; margin: 0 !important;}
+.carousel{height:100%; margin-top: -100px !important;}
 .carousel-inner{height:1000px !important;}
 .carousel-indicators li{margin-top:-200px !important;}
 .carousel-image-1{

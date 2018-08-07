@@ -30,7 +30,7 @@ body{overflow-x: hidden !important;}
 #home > div{/*margin-top:300px;*/}
 #home .head-text{
   letter-spacing:15px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Anton', sans-serif;
   /*connect animation*/
   animation-name:moveInLeft;
   animation-duration:2s;
@@ -48,11 +48,11 @@ body{overflow-x: hidden !important;}
   */
 
 }
-.head-text{margin-top:200px !important;}
+.head-text{margin-top:350px !important;}
 #home .sub-text{
   font-size: 2rem;
   font-family: 'Poiret One', cursive;
-  margin-top:120px;
+  margin-top:50px;
   /*connect animation*/
   animation: moveInRight 1s ease-out;
 }

@@ -10,6 +10,9 @@ body{overflow-x: hidden !important;}
   font-size: 1rem;
   padding-right: 1rem;
 }
+.navigaton_checkbox{
+  display:none;    
+  }
 /**/
 #home{
   position:relative;
@@ -304,6 +307,11 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 .footer_navigation a{
   color:#fff;
 }
+
+/*modal*/
+.black{
+  background-color:#000;
+}
 /*media*/
 @media screen and (max-width:768px){
   #home{min-height:500px;}
@@ -333,5 +341,91 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 input{
   width:100%;
 }
+
+/*navigation*/
+.navigation{
+
+}
+.navigaton_checkbox{
+display:none;    
+}
+.navigation_button{
+background-color: #fff;
+height:70px;
+width:70px;
+position:fixed;
+top:30px;
+right:60px;
+border-radius:50%;
+z-index: 90;    
+}
+ .navigation_background{
+    height:60px !important;
+    width:60px !important;
+    border-radius:50% !important;
+    position: fixed !important;
+    top:35px !important;
+    right:65px !important;
+    background-color: #fff !important;
+    z-index: 80;
+}
+.navigation .navigation_nav{
+
+}
+.navigation .navigation_list{
+    
+}
+.navigation .nav-item{
+    
+}
+.navigation .navigation_link{
+    
+}
+/*-------------------*/
+
+/*-------------------*/
+.nav-item{width:180px;
+  height:100px;
+   /*background-color:#8E1B1B; */
+  
+/*padding:25px;
+padding-bottom:3px;
+/*font-size:1.6rem;*/
+transform: skewX(0deg);
+margin-top:-30px;}
+
+
+.left{width:100px; 
+ height:100px; 
+ position:relative; 
+ right:60px;
+ overflow:hidden; 
+ padding:25px;
+padding-bottom:3px;
+/*font-size:1.6rem;*/
+transform: skewX(-12deg);}
+.front{width:100%; height:100%; background-color:#8E1B1B; color:#fff; font-size:; position:absolute;bottom:5px;
+padding:25px;
+padding-bottom:3px; margin-top:-30px;}
+.nav-item a{position:absolute; right:25px;/*make 
+text allways appear at front*/ z-index:2;padding:30px;}
+
+
+
+
+.back2{width:100%; height:100%; background-color:#333;
+ color:#333 !important;
+ position:absolute; 
+ left:-100%; 
+ top:-0px;
+ padding:10px;
+padding:25px;
+padding-bottom:3px;
+ -webkit-transition:left 0.25s ease-in-out;
+ transition:left 0.25s ease-in-out; 
+}
+.left:hover .back2{left:0%; }
+.form-control-lg{opacity:.7 !important; text-align: left; border:none !important; padding-left:10px !important;}
+/*-------------------*/
 
 }

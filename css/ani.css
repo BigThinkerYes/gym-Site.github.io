@@ -211,3 +211,61 @@
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 14, 17, 0.8)), url('../img/adult-buildings-city-374882.jpg');
     background-size:cover;
   }
+  /**/
+.imageBase{
+    height:250px;
+    width:auto;
+    position: relative;
+    overflow: hidden;
+}
+/*#plan .imageBase:hover{
+    -webkit-filter: grayscale(20%);
+    filter:grayscale(20%);
+}*/
+.play{
+position: absolute;
+margin-left:-170px;
+font-size:30px;
+text-align:center;
+color:#fff;
+-webkit-transition:margin 1s;
+transition:margin 1s;
+cursor: pointer;
+z-index:3;
+}
+.imageBase:hover .play{
+    margin-left:170px;
+}
+.circle{
+    position: absolute;
+    margin-left:330px;
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    background-color:rgba(153, 8, 8, 0.8);
+    -webkit-transition:margin 1s;
+transition:margin 1s;
+cursor: pointer;
+z-index:2;
+}
+.imageBase:hover .circle{
+    margin-left:120px;
+}
+  .figcaption{
+        padding:10px;
+        color:#fff;
+        position:absolute;
+        bottom:-40px;
+        right:10px;
+        transition: all 400ms ease-out;
+        transform:rotate(-30deg);
+        transform-origin:right center;
+        background:rgba(0, 0, 0, 0.9);
+
+}
+.imageBase:hover .figcaption{
+    bottom:10px;
+    transform:rotate(0);
+}
+
+  /**/
